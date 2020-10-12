@@ -23,7 +23,7 @@
   - Konstruktorban számoljuk!
   - számolása: Vég - Kezdet, HA Vég > Kezdet
   - Vég > Kezdet --> Vég - Kezdet + 1
-  - Egyébként --> 12 - Vég + Kezdet + 1
+  - Egyébként --> 12 - Kezdet + Vég + 1
 
 ## Adatok beolvasása és eltárolása
 - Listában tároljuk az objektum páldányokat
@@ -39,10 +39,27 @@
 ## 2. feladat:
 - Milyen gyűjthető részek vannak?
 - Hány darab van ezekből?
+- Dictionary<string, int>
+- Milyen gyűjthető részek vannak?
+  - foreach Novenyek
+  - Ha a Resz nem kulcs --> akkor adjuk hozzá 0-val
+- Hány darab van ezekből?
+  - foreach  Novenyek
+  - Ja "Resz" == Key --> Value + 1
 
 ## 3. feladat:
 - Maximum keresés --> Időtartam alapján
+  - maximum változó = 0
+  - foreach Novenyek
+  - Ha max < Idotartam --> max = Idotartam
 - Növény(ek), amelyeket a legtöbb ideig szedtek
+  - foreach Novenyek
+  - Kiírni, ha Idotartam == max
 
 ## 4. feladat:
 - Időtartam átlag számítása
+  - szum változó = 0 (double típus)
+  - atlag változó
+  - foreach Novenyek
+  - szum = szum + Idotartam
+  - atlag = szum / Count
